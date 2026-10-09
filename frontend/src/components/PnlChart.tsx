@@ -12,8 +12,6 @@ type TipProps = {
   label?: string | number;
 };
 
-const tick = { fill: "#93a3b5", fontSize: 11 };
-
 export function PnlChart({ aggregates }: Props) {
   const data = (aggregates?.groups ?? []).map((group) => ({
     name: group.key,
